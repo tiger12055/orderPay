@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.1.149/sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+server:
+  context-path: /sell
+
+#logging:
+#  pattern:
+#    console: "%d -%msg%n"
+##  path: C:\Users\wang6\project\wechatpay\var\log\tomcat
+#  file: C:\Users\wang6\project\wechatpay\var\log\tomcat\sell.log
+#  level:
+#    com.order.sell.LoggerTest: debug
