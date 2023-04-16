@@ -4,7 +4,6 @@ import com.order.sell.dataobject.OrderDetail;
 import com.order.sell.dto.OrderDTO;
 import com.order.sell.enums.OrderStatusEnum;
 import com.order.sell.enums.PayStatusEnum;
-import junit.framework.TestCase;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Test;
