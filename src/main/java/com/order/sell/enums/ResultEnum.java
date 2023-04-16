@@ -1,9 +1,12 @@
 package com.order.sell.enums;
 
+import javafx.scene.input.KeyCodeCombination;
 import lombok.Getter;
 
 @Getter
 public enum ResultEnum {
+
+    PARAM_ERROR(1, "Parameter is incorrect"),
 
     PRODUCT_NOT_EXIST(10, "Item not existing"),
 
@@ -20,6 +23,10 @@ public enum ResultEnum {
     ORDER_DETAIL_EMPTY(16, "Order detail is Empty"),
 
     ORDER_PAY_STATUS_ERROR(17, "Order payment status is not correct"),
+
+    CART_EMPTY(18, "The shopping cart is empty"),
+
+    ORDER_OWNER_ERROR(19, "This Order is not belong to this user"),
     ;
 
     private Integer code;
