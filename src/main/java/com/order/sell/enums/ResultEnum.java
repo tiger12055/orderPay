@@ -27,6 +27,8 @@ public enum ResultEnum {
     CART_EMPTY(18, "The shopping cart is empty"),
 
     ORDER_OWNER_ERROR(19, "This Order is not belong to this user"),
+
+    WECHAT_MP_ERROR(20, "Wechat authorization error"),
     ;
 
     private Integer code;
