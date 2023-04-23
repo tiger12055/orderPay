@@ -29,6 +29,8 @@ public enum ResultEnum {
     ORDER_OWNER_ERROR(19, "This Order is not belong to this user"),
 
     WECHAT_MP_ERROR(20, "Wechat authorization error"),
+
+    WXPAY_NOTIFY_MONEY_VERIFY_ERROR(21, "Wechat payment notification amount is not matched")
     ;
 
     private Integer code;
