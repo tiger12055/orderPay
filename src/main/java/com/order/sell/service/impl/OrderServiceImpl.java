@@ -13,6 +13,7 @@ import com.order.sell.exception.SellException;
 import com.order.sell.repository.OrderDetailRepository;
 import com.order.sell.repository.OrderMasterRepository;
 import com.order.sell.service.OrderService;
+import com.order.sell.service.PayService;
 import com.order.sell.service.ProductService;
 import com.order.sell.utils.KeyUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -41,6 +42,9 @@ public class OrderServiceImpl implements OrderService {
 
     @Autowired
     private OrderMasterRepository orderMasterRepository;
+
+    @Autowired
+    private PayService payService;
 
     @Override
     @Transactional
@@ -150,9 +154,8 @@ public class OrderServiceImpl implements OrderService {
 
         //if already made a payment need to return money to buyer
         if (orderDTO.getPayStatus().equals(PayStatusEnum.SUCCESS.getCode())) {
-            //TODO
+            payService.refund(orderDTO);
         }
-
         return orderDTO;
     }
 
