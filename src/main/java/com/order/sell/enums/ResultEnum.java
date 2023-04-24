@@ -6,6 +6,8 @@ import lombok.Getter;
 @Getter
 public enum ResultEnum {
 
+    SUCCESS(0, "Success"),
+
     PARAM_ERROR(1, "Parameter is incorrect"),
 
     PRODUCT_NOT_EXIST(10, "Item not existing"),
@@ -30,7 +32,11 @@ public enum ResultEnum {
 
     WECHAT_MP_ERROR(20, "Wechat authorization error"),
 
-    WXPAY_NOTIFY_MONEY_VERIFY_ERROR(21, "Wechat payment notification amount is not matched")
+    WXPAY_NOTIFY_MONEY_VERIFY_ERROR(21, "Wechat payment notification amount is not matched"),
+
+    ORDER_CANCEL_SUCCESS(22, "Order cancel successfully"),
+
+    ORDER_FINISH_SUCCESS(22, "Order finish successfully"),
     ;
 
     private Integer code;
