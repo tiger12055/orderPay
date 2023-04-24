@@ -23,4 +23,6 @@ public interface OrderService {
 
     /** pay the order. */
     OrderDTO paid(OrderDTO orderDTO);
+
+    Page<OrderDTO> findList(Pageable pageable);
 }
