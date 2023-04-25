@@ -3,9 +3,9 @@ package com.order.sell.enums;
 import lombok.Getter;
 
 @Getter
-public enum ProductStatusEnum {
-    UP(0, "upload"),
-    DOWN(1, "take down")
+public enum ProductStatusEnum implements CodeEnum {
+    UP(0, "在架"),
+    DOWN(1, "下架")
     ;
 
     private Integer code;

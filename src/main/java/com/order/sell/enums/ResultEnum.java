@@ -37,6 +37,8 @@ public enum ResultEnum {
     ORDER_CANCEL_SUCCESS(22, "Order cancel successfully"),
 
     ORDER_FINISH_SUCCESS(22, "Order finish successfully"),
+
+    PRODUCT_STATUS_ERROR(23, "Product status is incorrect"),
     ;
 
     private Integer code;
