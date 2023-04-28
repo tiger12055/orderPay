@@ -12,7 +12,6 @@ import java.util.Date;
 
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
 @Entity
 @DynamicUpdate
 public class ProductCategory {
@@ -27,6 +26,13 @@ public class ProductCategory {
 
     //category type
     private Integer categoryType;
+
+    private Date createTime;
+
+    private Date updateTime;
+
+    public ProductCategory() {
+    }
 
     public ProductCategory(String categoryName, Integer categoryType) {
         this.categoryName = categoryName;
